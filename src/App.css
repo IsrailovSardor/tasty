@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  //font-family: 'Montserrat', sans-serif;
+}
+.App{
+  font-family: 'Gilroy', sans-serif;
+}
+.container{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+button{
+  cursor: pointer;
+}
+.btn{
+  width: 145px;
+  height: 44px;
+  background: #0B0C17;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1330px) {
+  .container{
+    max-width: 1140px;
+  }
+}
+
+.burger{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container{
+    max-width: 960px;
+    padding: 0 15px;
+  }
+  .header__main_img{
+    display: none;
+  }
+  .nav__content{
+    padding: 14px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .container{
+    max-width: 720px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container{
+    max-width: 540px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container{
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+

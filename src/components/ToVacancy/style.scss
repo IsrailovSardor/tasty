@@ -1,0 +1,438 @@
+.vacancy {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background: #F5F5F5;
+
+    .vacancy__content {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vacancy__block {
+        max-width: 494px;
+        width: 100%;
+        padding: 32px;
+        background: white;
+    }
+
+    .vacancy__input {
+        width: 100%;
+        height: 44px;
+        border: 1px solid #DCDCEB;
+        border-radius: 2px;
+        background: none;
+        margin-bottom: 16px;
+        padding: 12px;
+        &:focus{
+            outline: 2px solid black;
+        }
+        &.error{
+            outline: 1px solid red;
+        }
+    }
+
+    .vacancy__select {
+        width: 100%;
+        height: 44px;
+        border: 1px solid #DCDCEB;
+        border-radius: 2px;
+        background: none;
+        margin-bottom: 16px;
+        padding: 12px;
+    }
+
+    .vacancy__title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 145%;
+        color: #222539;
+        margin-bottom: 8px;
+    }
+
+    .vacancy__descr {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 174.5%;
+        color: #4A5869;
+        margin-bottom: 28px;
+    }
+
+    .for__vc {
+        background: #EEF5FF;
+        border-radius: 2px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        margin-bottom: 29px;
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: #222539;
+            margin-right: 14px;
+        }
+
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 25px;
+
+        input {
+            width: 22px;
+            height: 22px;
+            margin-right: 14px;
+            background-color: red;
+        }
+
+        p {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            color: #374257;
+
+            span {
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                cursor: pointer;
+                color: skyblue;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .submit__btn {
+        padding: 14px 36px 13px;
+        width: 100%;
+        background: #0B0C17;
+        border-radius: 2px;
+        border: none;
+
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+.dropdown {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    user-select: none;
+    margin-bottom: 15px;
+
+    .dropdown-btn {
+        padding: 12px 15px 11px 15px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        border: 1px solid #DCDCEB;
+        color: #0B0C17;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        overflow: hidden;
+
+        &.skills.error{
+            border: 1px solid red;
+        }
+
+        svg {
+            transition: 0.2s;
+        }
+
+        .rotate {
+            transform: rotate(-180deg);
+        }
+
+        .dropdown-btn__block {
+            display: flex;
+            align-items: center;
+
+
+            img {
+                margin-right: 8px;
+                height: 15.724124908447266px;
+                width: 24px;
+                border-radius: 2px;
+            }
+
+            p {
+                overflow: hidden;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+            }
+
+        }
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 120%;
+        z-index: 10;
+        padding: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(152, 193, 255, 0.05);
+        border-radius: 2px;
+        width: 100%;
+
+        .dropdown-search {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 12px;
+
+            svg {
+                margin-right: 13px;
+            }
+
+            input {
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+                outline: none;
+                border: none;
+                width: 100%;
+
+                &::placeholder {
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    color: black;
+                }
+            }
+        }
+
+        .dropdown-item {
+            padding: 16px 0;
+            border-bottom: 1px solid #ECF0FF;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            display: flex;
+            align-items: center;
+
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+
+            img {
+                margin-right: 15px;
+                height: 15.724124908447266px;
+                width: 24px;
+                border-radius: 2px;
+            }
+
+            p {
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+    margin-right: 13px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #FFC700;
+    background-color: #FFC700;
+    background-image: url("../../images/mark.svg");
+}
+
+@media (max-width:500px) {
+
+    .vacancy {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: #F5F5F5;
+    
+        .vacancy__content {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .vacancy__block {
+            max-width: 494px;
+            width: 100%;
+            padding: 15px;
+            background: white;
+        }
+    
+        .vacancy__input {
+            width: 100%;
+            height: 44px;
+            border: 1px solid #DCDCEB;
+            border-radius: 2px;
+            background: none;
+            margin-bottom: 16px;
+            padding: 12px;
+        }
+    
+        .vacancy__select {
+            width: 100%;
+            height: 44px;
+            border: 1px solid #DCDCEB;
+            border-radius: 2px;
+            background: none;
+            margin-bottom: 16px;
+            padding: 12px;
+        }
+    
+        .vacancy__title {
+            font-size: 23px;
+        }
+    
+        .vacancy__descr {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 174.5%;
+            color: #4A5869;
+            margin-bottom: 28px;
+        }
+    
+        .for__vc {
+            background: #EEF5FF;
+            border-radius: 2px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90px;
+            margin-bottom: 29px;
+    
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+                color: #222539;
+                margin-right: 14px;
+            }
+    
+        }
+    
+        .checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-bottom: 25px;
+    
+            input {
+                width: 22px;
+                height: 22px;
+                margin-right: 14px;
+                background-color: red;
+            }
+    
+            p {
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                color: #374257;
+    
+                span {
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 160%;
+                    cursor: pointer;
+                    color: skyblue;
+                    text-decoration: underline;
+                }
+            }
+        }
+    
+        .submit__btn {
+            padding: 14px 36px 13px;
+            width: 100%;
+            background: #0B0C17;
+            border-radius: 2px;
+            border: none;
+    
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+    }
+}

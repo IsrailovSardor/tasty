@@ -1,0 +1,140 @@
+.costSection{
+    background: linear-gradient(to left, #F8F9FF, #F8F9FF 50%, white 50%, white 50%);
+    //background-color: #F8F9FF;
+}
+.costSection .container{
+    display: flex;
+}
+.costSection .cost__description{
+    width: calc(50% + 25px);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+}
+
+.costSection .cost__description__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.costSection .cost__description__title{
+    font-size: 45px;
+    line-height: 42.04px;
+    color: black;
+    font-weight: 600;
+    padding: 0;
+    max-width: 535px;
+    margin-right: 78px;
+    letter-spacing: 1px;
+}
+
+.costSection .cost__description__text{
+    font-size: 16px;
+    line-height: 26.24px;
+    color: #111D2C;
+    font-weight: 400;
+    padding: 0;
+    max-width: 535px;
+    margin: 30px 78px 20px auto;
+}
+
+.costSection .cost__checkboxes{
+    display: block;
+    max-width: 535px;
+    margin-right: 78px;
+    padding: 0;
+}
+
+.costSection .cost__checkbox{
+    display: flex;
+    align-items: center;
+    margin: 19px 0 0;
+}
+
+.costSection .checkbox__image{
+    display: block;
+}
+
+.costSection .cost__checkbox__text{
+    margin: 0 0 0 10px;
+    font-size: 16px;
+    line-height: 19.6px;
+    font-weight: 600;
+    color: #111D2C;
+}
+
+@media (max-width: 1330px){
+    .costSection{
+        width: 100%;
+        .cost__description__container{
+
+        }
+        .cost__checkboxes{
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .costSection{
+        margin-top: 120px;
+        .container{
+            padding-left: 35px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .costSection{
+        .cost__description{
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .costSection{
+        background: white;
+        margin-top: 120px;
+        .container{
+            flex-direction: column;
+            .cost__description{
+                width: 100%;
+                justify-content: start;
+                .cost__description__title{
+                    margin-right: 20px;
+                    max-width: 100%;
+                }
+                .cost__description__text{
+                    margin-right: 20px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .costSection{
+        background: white;
+        .container{
+            flex-direction: column;
+            padding-left: 20px;
+            .cost__description{
+                width: 100%;
+                .cost__description__title{
+                    margin: 0;
+                    font-size: 32px;
+                    line-height: 36px;
+                }
+                .cost__description__text{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

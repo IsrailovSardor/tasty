@@ -1,0 +1,206 @@
+.clientSection {
+    width: 100%;
+    margin-top: 112px;
+    .container {
+        max-width: 1168px;
+        margin: auto;
+        .line {
+            border: 1px solid #F0F0F0;
+            max-width: 1030px;
+        }
+        .clients {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: scroll;
+            align-items: center;
+            justify-content: space-between;
+            padding: 31px 0;
+            gap: 160px;
+            .clients__title {
+                min-width: 73px;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 128%;
+                color: #676767;
+
+            }
+            .clients__logos {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                justify-content: flex-start;
+                gap: 20px 50px;
+                max-width: 929px;
+                &::-webkit-scrollbar {
+                    height: 0;
+                    width: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1201px ){
+    .clientSection {
+        .container {
+            .clients {
+                gap: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 818px ){
+    .clientSection {
+        .container {
+            .clients {
+                gap: 50px;
+            }
+        }
+    }
+}
+@media (max-width: 700px ){ 
+    .clientSection {
+        width: 100%;
+        margin-top: 80px;
+        .container {
+            max-width: 1168px;
+            margin: auto;
+            .clients {
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 31px 0;
+                gap: 30px;
+                .clients__logos {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: center;
+                    gap: 20px 50px;
+                    max-width: 929px;
+                }
+               
+            }
+        }
+    }
+    
+}
+    
+
+// .clientSection{
+//     margin-top: 106px;
+// }
+// .line{
+//     max-width: 1030px;
+//     border: 1px solid #F0F0F0
+// }
+// .clients{
+//     margin-top: 32px;
+//     margin-bottom: 32px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+// .clients__title{
+//     font-weight: 600;
+// font-size: 16px;
+// line-height: 128%;
+// color: #676767;
+// }
+// .clients__logos{
+//     max-width: 930px;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+// @media (max-width: 1200px) {
+//     .clients{
+//         align-items: start;
+//     }
+//     .clients__title{
+//         font-size: 24px;
+//         margin-left: 20px;
+//     }
+//     .clients__logos{
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr 1fr;
+//         gap: 20px;
+//         row-gap: 40px;
+//         width: 700px;
+//         .logos{
+
+//         }
+//     }
+// }
+
+// @media (max-width: 991px) {
+//     .clientSection{
+//         margin-top: 70px;
+//     }
+//     .clients__title{
+//         font-size: 20px;
+//         margin-left: 20px;
+//         margin-bottom: 20px;
+//     }
+//     .clients__logos{
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr 1fr;
+//         gap: 20px;
+//         row-gap: 40px;
+//         width: 500px;
+//         .logos{
+//             display: block;
+//             margin: 0 auto;
+//         }
+//     }
+// }
+
+// @media (max-width: 767px) {
+//     .clientSection{
+//         margin-top: 140px;
+//         .clients{
+//             flex-direction: column;
+//             align-items: center;
+//             .clients__title{
+//                 margin-bottom: 40px;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 575px) {
+//     .clientSection{
+//         margin-top: 40px;
+//     }
+//     .clients {
+//         flex-direction: column;
+//         .clientSection {
+//             margin-top: 0;
+//         }
+
+//         .clients__title {
+//             margin-left: 0;
+//             margin-bottom: 0;
+//         }
+
+//         .clients__logos {
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             gap: 20px;
+//             row-gap: 40px;
+//             width: 100%;
+//             padding-left: 40px;
+//             .logos {
+//                 display: block;
+//                 margin: 0;
+//             }
+//         }
+//     }
+// }

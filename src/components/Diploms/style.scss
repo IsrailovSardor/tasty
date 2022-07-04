@@ -1,0 +1,255 @@
+.diploms {
+    width: 100%;
+    height: auto;
+    padding: 235px 15px 140px 15px;
+
+    .environment__container {
+        max-width: 1168px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .environment__block-descr {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 44px;
+
+            .block-descr__title {
+                max-width: 540px;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 132%;
+            }
+
+            .block-descr__descr {
+                max-width: 569px;
+                margin-top: 20px;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 164%;
+                color: #2A2F51;
+            }
+
+        }
+
+        .environment__diploms {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+            gap: 24px;
+
+            .img {
+                width: calc(25% - 18px);
+                height: 179px;
+            }
+        }
+
+        .btn__start {
+            margin: auto;
+            width: 175px;
+            height: 45px;
+            background: #ffffff;
+            border-radius: 3px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            transition: 0.3s;
+
+            &:hover {
+                border: 2px solid black;
+                background: black;
+                color: white;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 991.98px) {
+    .diploms {
+        width: 100%;
+        height: auto;
+        padding: 91px 15px 100px 15px;
+
+        .environment__container {
+            max-width: 1168px;
+            margin: 0 auto;
+
+            .environment__block-descr {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 44px;
+                gap: 50px;
+
+                .block-descr__title {
+                    width: 50%;
+                    font-size: 35px;
+                }
+
+                .block-descr__descr {
+                    width: 50%;
+                }
+
+            }
+
+            .environment__diploms {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 44px 70px 30px;
+                gap: 32px;
+
+                .img {
+                    width: calc(50% - 16px);
+                    height: auto;
+                }
+            }
+
+            .btn__start {
+                width: 145px;
+                height: 44px;
+                background: #ffffff;
+                border-radius: 3px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                transition: 0.3s;
+
+                &:hover {
+                    border: 2px solid black;
+                    background: black;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 799.98px) {
+    .diploms {
+        width: 100%;
+        height: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .environment__container {
+            max-width: 1168px;
+            margin: 0 auto;
+
+            .environment__block-descr {
+                width: 100%;
+                display: block;
+
+                .block-descr__title {
+                    width: 100%;
+                    font-size: 30px;
+                }
+
+                .block-descr__descr {
+                    width: 100%;
+                    line-height: 130%;
+                }
+
+            }
+
+            .environment__diploms {
+                padding: 0;
+                & img{
+                    width: 230px;
+                }
+            }
+
+            .btn__start {
+                width: 140px;
+                height: 40px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 573.98px) {
+    .diploms {
+        width: 100%;
+        height: auto;
+        padding: 91px 15px 0 15px;
+
+        .environment__container {
+            max-width: 1168px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            .environment__block-descr {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                gap: 15px;
+
+                .block-descr__title {
+                    width: 100%;
+                    line-height: 100%;
+                }
+
+                .block-descr__descr {
+                    width: 100%;
+                }
+
+            }
+
+            .environment__diploms {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 56px;
+                gap: 24px;
+                padding: 0 9px;
+
+                .img {
+                    width: 100%;
+                    height: 179px;
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .btn__start {
+                margin: auto;
+                width: 145px;
+                height: 44px;
+                background: #ffffff;
+                border-radius: 3px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                transition: 0.3s;
+
+                &:hover {
+                    border: 2px solid black;
+                    background: black;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+}
